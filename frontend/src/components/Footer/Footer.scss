@@ -1,0 +1,54 @@
+.Footer{
+    background-color: rgba(0, 0, 0, 0.148);
+    padding-block:20px;
+    
+    margin-top: 70px;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        .title{
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .left{
+            .follow{
+                display: flex;
+                list-style: none;
+                gap: 10px;
+                font-size: 20px;
+                li{
+                    height: 36px;
+                    width: 36px;
+                    background-color: aliceblue;
+                    border-radius: 50%;
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.251);
+                    }
+                }
+            }
+        }
+        .right{
+            .company{
+                li{
+                    margin-top: 10px;
+                    list-style: none;
+                    font-weight: 600;
+                    &:hover{
+                        background-color: transparent;
+                        color : var(--accent-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .Footer{
+        .content{
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}
